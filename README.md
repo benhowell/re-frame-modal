@@ -1,5 +1,5 @@
 # re-frame-modal
-Basic [re-frame](https://github.com/Day8/re-frame) recipe for creating modal/dialog/overlay panels. This implementation is pure re-frame and css, free from jQuery and DOM manipulation and can be used as a drop-in replacement for [Bootstrap modals](http://getbootstrap.com/javascript/#modals) (minus all that jQuery and javascript cruft).
+Basic [re-frame](https://github.com/Day8/re-frame) recipe for creating modal/dialog/overlay panels. This implementation is pure re-frame and css, free from jQuery and DOM manipulation and can be used as a drop-in replacement for [Bootstrap modals](http://getbootstrap.com/javascript/#modals) (minus all that jQuery cruft).
 
 
 ## Usage
@@ -29,6 +29,9 @@ Add the modal component to your page. Personally, I choose to do this just once 
   [modal/modal] view]
 ```
 
+-------------------------------
+
+
 Use it!
 
 ```cljs
@@ -51,6 +54,8 @@ If you want to use bootstrap style modals, then include bootstrap css file (no n
                                  :child [modal/hello-bootstrap]
                                  :size :small}])} "Bootstrap my modal!"]
 ```
+
+-------------------------------
 
 
 ## Options
