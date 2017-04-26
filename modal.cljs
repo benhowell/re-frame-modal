@@ -1,4 +1,4 @@
-(ns ^:figwheel-always client.components.modal
+(ns modal
   (:require
    [re-frame.core :refer [dispatch subscribe]]))
 
