@@ -1,6 +1,9 @@
 # re-frame-modal
 Basic [re-frame](https://github.com/Day8/re-frame) recipe for creating modal/dialog/overlay panels. This implementation is pure re-frame and css, free from jQuery and DOM manipulation and can be used as a drop-in replacement for [Bootstrap modals](http://getbootstrap.com/javascript/#modals) (minus all that jQuery cruft).
 
+![Screeno](https://github.com/benhowell/re-frame-modal/blob/296794b3e008490b4bc69794dfba3d218b21e90c/bootstrap-modal.png)
+
+
 
 ## Usage
 
@@ -68,4 +71,8 @@ re-frame-modal takes the following parameters (set with dispatch event):
    * `:large` (70% width)
    * `:extra-large` (85% width).
    * If no size parameter given, defaults to 50% width.
+
+
+------------------------------
+
 
