@@ -75,6 +75,5 @@ re-frame-modal takes the following parameters (set with dispatch event):
    * If no size parameter given, defaults to 50% width.
 
 
-------------------------------
 
 
