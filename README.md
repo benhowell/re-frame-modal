@@ -20,7 +20,24 @@ NOTE: You can inline these styles if you don't wish to have the fade-in animatio
 
 -------------------------------
 
-Add the [dispatch handler](https://github.com/benhowell/re-frame-modal/blob/master/handlers.cljs#L5) and the [subscriber](https://github.com/benhowell/re-frame-modal/blob/master/subscribers.cljs#L6) to your own handlers and subscribers accordingly.
+Add the [dispatch handler](https://github.com/benhowell/re-frame-modal/blob/master/handlers.cljs#L5) to your handlers:
+
+```cljs
+(reg-event-db
+ :modal
+ (fn [db [_ data]]
+   (assoc-in db [:modal] data)))
+```
+
+Add the [subscriber](https://github.com/benhowell/re-frame-modal/blob/master/subscribers.cljs#L6) to your subscribers:
+
+```cljs
+(reg-sub-raw
+ :modal
+ (fn [db _] (reaction (:modal @db))))
+```
+
+----------------------------------
 
 Add the modal component to your page. Personally, I choose to do this just once in core.cljs straight after app mount (resulting in a global modal container), but you can do it at the component level instead if you wish.
 
